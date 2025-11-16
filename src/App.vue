@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import SalesChart from '@/components/SalesChart.vue'
 </script>
 
 <template>
@@ -39,6 +40,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
           </CardHeader>
           <CardContent>
             <div class="text-3xl font-bold">89%</div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Sales Overview</CardTitle>
+            <CardDescription>Last 7 days performance</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <SalesChart />
           </CardContent>
         </Card>
       </div>
